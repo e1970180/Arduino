@@ -1,0 +1,43 @@
+#######################################
+# Syntax Coloring Map
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+SimpleBlinker	KEYWORD1
+Blink		KEYWORD1	
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+update		KEYWORD2
+
+mode1configT	KEYWORD2	
+mode2configT	KEYWORD2	
+mode3configT	KEYWORD2
+mode1configF	KEYWORD2	
+mode2configF	KEYWORD2	
+mode3configF	KEYWORD2
+
+set      	KEYWORD2
+on		KEYWORD2
+off   		KEYWORD2
+togle   	KEYWORD2
+setmode		KEYWORD2
+
+
+
+
+######################################
+# Constants (LITERAL1)
+######################################
+BL_CONT       		LITERAL1
+BL_MODE0		LITERAL1
+BL_MODE1		LITERAL1
+BL_MODE2		LITERAL1
+BL_MODE3		LITERAL1
+PR_NON_INVERSE      	LITERAL1
+PR_INVERSE          	LITERAL1
+PR_BLINK_LEDS_MAX       LITERAL1
