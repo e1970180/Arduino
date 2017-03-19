@@ -20,6 +20,10 @@ mode3configT	KEYWORD2
 mode1configF	KEYWORD2	
 mode2configF	KEYWORD2	
 mode3configF	KEYWORD2
+getM1		KEYWORD2
+getM2		KEYWORD2
+getM3		KEYWORD2
+get		KEYWORD2
 
 set      	KEYWORD2
 on		KEYWORD2

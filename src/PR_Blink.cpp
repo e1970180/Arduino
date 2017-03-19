@@ -1,5 +1,5 @@
 /*****************************
-ver 0.2.1
+ver 0.3.0
 
 */
 
@@ -62,8 +62,14 @@ ver 0.2.1
             }               
 		} //update()
 
-		
-		
+		bool	BlinkClass::get(BlinkMode m) {
+			switch (m) { 
+				case BL_CONT:	return true;
+				case BL_MODE1:	return _modeState.m1;
+				case BL_MODE2:	return _modeState.m2;
+                case BL_MODE3:	return _modeState.m3;                     
+				} //switch	
+		}
 		SimpleBlinker::SimpleBlinker (uint8_t pin, bool onValue) {  //onValue = pin state to "on" the led
 		    _led = _numLeds;
             if (_numLeds < PR_BLINK_LEDS_MAX-1 ) _numLeds++; //предотвращаем переполнение массива

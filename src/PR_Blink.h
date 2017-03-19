@@ -1,5 +1,5 @@
 /*****************************
-ver 0.2.1
+ver 0.3.0
 
 */
 #ifndef PR_Blink_h
@@ -26,6 +26,10 @@ class BlinkClass {
         static void mode2configF(float freq, uint8_t duty);
         static void mode3configF(float freq, uint8_t duty);
 		static void update();
+		bool		get(BlinkMode m);
+		bool 		getM1() 				{ return _modeState.m1; }
+		bool 		getM2() 				{ return _modeState.m2; }		
+		bool 		getM3() 				{ return _modeState.m3; }		
 	protected:
 		static 	uint8_t     _timeOn[3];		    //on period for mode[i] in ms
 		static 	uint8_t     _timeOff[3];
