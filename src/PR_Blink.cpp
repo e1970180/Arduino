@@ -1,3 +1,9 @@
+/*****************************
+ver 0.2.1
+
+*/
+
+
 #include "PR_Blink.h"
 
 #include <arduino.h>
@@ -97,7 +103,7 @@
 		void    SimpleBlinker::off()               { _data[_led].state = !_data[_led].onValue; 			}
         void    SimpleBlinker::togle()             { _data[_led].state = !_data[_led].state; 			}
                 
-	    void    SimpleBlinker::setmode(BlinkMode mode, bool inverse = false) {			
+	    void    SimpleBlinker::setmode(BlinkMode mode, bool inverse) {			
 			_data[_led].mode = mode;
 			_data[_led].modeInverse	= inverse;
         }	
@@ -105,9 +111,9 @@
           BlinkClass   Blink;
           uint8_t      BlinkClass::_timeOn[3];                     //on period for mode[i] in 1000/32 
           uint8_t      BlinkClass::_timeOff[3];
-          static union BlinkClass::BlinkData      BlinkClass::_modeState;           
+          struct	   BlinkClass::BlinkData      BlinkClass::_modeState;           
 
           uint8_t      SimpleBlinker::_numLeds=0; 
-          static union SimpleBlinker::ledData      SimpleBlinker::_data[PR_BLINK_LEDS_MAX];
+          union			SimpleBlinker::ledData      SimpleBlinker::_data[PR_BLINK_LEDS_MAX];
 
 

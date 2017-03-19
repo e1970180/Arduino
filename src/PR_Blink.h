@@ -1,5 +1,5 @@
 /*****************************
-ver 0.2.0
+ver 0.2.1
 
 */
 #ifndef PR_Blink_h
@@ -11,11 +11,6 @@ ver 0.2.0
 #ifndef PR_BLINK_LEDS_MAX
 #define PR_BLINK_LEDS_MAX 8
 #endif
-
-//#define PR_MODE0       0
-//#define PR_MODE1       1
-//#define PR_MODE2       2
-//#define PR_MODE3       3
 
 #define PR_NON_INVERSE       0
 #define PR_INVERSE           1
